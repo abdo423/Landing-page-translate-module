@@ -8,41 +8,33 @@
         src="https://images.unsplash.com/photo-1518756579831-36b7961c9d00?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         alt="leafs"
       />
-      <nav
-        class="navbar navbar-expand-md position-absolute top-0 mt-4 position-fixed col-lg-12 start-0 nav-bar"
-      >
-        <a href="#" class="fs-2 me-2 col-5 text-center">LO</a>
-     
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse col-9" id="navbarNav">
-          <ul class="navbar-nav ms-2 ms-auto">
-         
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-uppercase" href="#">Articles</a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link btn btn-outline-primary text-uppercase"
-                href="#"
-                >Subscribe</a
-              >
-            </li>
-          </ul>
+      <nav class="navbar navbar-expand-lg fixed-top position-absolute top-0 mt-4 nav-bar ">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-1" href="#">LO</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">LO</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 align-items-baseline gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link active text-uppercase p-1" aria-current="page" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase p-1" href="#">Articles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-uppercase" href="#"><button class="btn btn-outline-dark p-1">Subscribe</button></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-      </nav>
+    </nav>
 
       <div
         class="position-absolute top-50 start-50 translate-middle text-center"
@@ -52,4 +44,5 @@
       </div>
     </div>
   </div>
+ 
 </header>

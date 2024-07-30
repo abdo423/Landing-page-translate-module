@@ -28,5 +28,6 @@ h1{
     padding-left: 1rem;
 }
 .nav-bar{
-    width: 80%;
+    width: 75%;
+    margin: auto;
 }
