@@ -1,0 +1,32 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li,a{
+    text-decoration: none;
+    list-style: none;   
+}
+img{
+    width: fit-content;
+    height: 100%;
+    padding: 20px;
+
+}
+h1{
+    font-size: 4rem;
+    font-weight: 700;
+    color: #333;
+    padding: 20px;
+    
+}
+.logo{
+    margin-left: 20px;
+}
+.list-item{
+    padding-left: 1rem;
+}
+.nav-bar{
+    width: 80%;
+}
