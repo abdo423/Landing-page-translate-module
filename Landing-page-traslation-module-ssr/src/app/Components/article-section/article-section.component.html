@@ -1,15 +1,32 @@
 <div class="section-background">
-    <div class="container section-cont">
-      <div class="row">
-        <div class="col-12">
-          <h1 class="text-center my-5 text-uppercase">Latest Articles</h1>
-        </div>
-        <div class="row row-col-lg-2 g-4 m-2">
-          <app-article-card class="col-lg"></app-article-card>
-          <app-article-card class="col-lg"></app-article-card>
-          <app-article-card class="col-lg"></app-article-card>
-        </div>
+  <div class="container section-cont">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center my-5 text-uppercase">Latest Articles</h1>
+      </div>
+      <div class="row row-col-lg-2 g-4 m-2">
+        <app-article-card
+          class="col-lg text-center"
+          [content]="
+            'How to use mindfullness
+          in your everyday life'
+          "
+        ></app-article-card>
+        <app-article-card
+          class="col-lg text-center"
+          [content]="
+            'What are the best walking
+          meditations'
+          "
+        ></app-article-card>
+        <app-article-card
+          class="col-lg text-center"
+          [content]="
+            'How to go deep into
+          the mind of hope'
+          "
+        ></app-article-card>
       </div>
     </div>
   </div>
-  
+</div>

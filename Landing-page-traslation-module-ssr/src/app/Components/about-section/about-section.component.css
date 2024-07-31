@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+.custom-paragraph {
+    max-width: 512px; /* Adjust the max-width as needed */
+    margin: 0 auto; /* Center the paragraph within the column */
+    /* text-align: justify;  */
+    line-height: 2; /* Adjust line height for readability */
+    word-spacing: 10px;
+    hyphens: auto; /* Enable hyphenation */
+    -webkit-hyphens: auto; /* Enable hyphenation for webkit browsers */
+    -moz-hyphens: auto; /* Enable hyphenation for Firefox */
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    margin: 30px auto;
+}
+h3{
+    margin: 40px auto    ;
+    position: relative;
+}
+h3::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 70%;
+    left: 30%;
+    
+    width: 48px;
+    height: 4px;
+    background-color: black;
+    margin: 30px 0;
+}
