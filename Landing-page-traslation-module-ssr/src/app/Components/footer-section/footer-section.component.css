@@ -1,0 +1,20 @@
+ul.list-unstyled {
+    list-style: none; /* Remove default list style */
+    padding: 0;       /* Remove default padding */
+    margin: 0;        /* Remove default margin */
+  }
+  
+  ul.list-unstyled li {
+    display: inline;  /* Display list items inline */
+    margin-right: 15px; /* Add some space between items */
+  }
+  
+  ul.list-unstyled li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #007bff; /* Custom link color */
+  }
+  
+  ul.list-unstyled li a:hover {
+    color: #0056b3; /* Darker color on hover */
+  }
+  
