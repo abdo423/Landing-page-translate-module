@@ -1,7 +1,13 @@
-<div class="row row-cols-1 d-flex align-items-center justify-content-center w-100 text-center h-100 subscribe-section my-5 py-5">
+<div
+  class="row row-cols-1 d-flex align-items-center justify-content-center w-100 text-center h-100 subscribe-section my-5 py-5"
+>
   <div class="col">
-      <h3 class="mb-3 text-uppercase fs-1">Subscribe</h3>
-      <p class="mb-4 fs-4">Sign-up to our newsletter</p>
-      <button class="btn btn-outline-dark">Submit</button>
-  </div>
+  <h3 class="mb-3 text-uppercase fs-1">Subscribe</h3>
+  <p class="mb-4 fs-4">Sign-up to our newsletter</p>
+  <!-- Use routerLink directly on the button -->
+
+  <a routerLink="/second-component" routerLinkActive="active" ariaCurrentWhenActive="page" ><button class="btn btn-outline-dark p-1">Subscribe</button> </a>
+
+  <!-- The routed views render in the <router-outlet>-->
 </div>
+

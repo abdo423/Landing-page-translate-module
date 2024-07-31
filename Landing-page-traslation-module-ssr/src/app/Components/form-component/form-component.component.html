@@ -1,0 +1,78 @@
+<div class="container-fluid h-100 bg-color">
+  <div class="row justify-content-center w-100 vh-100 d-flex align-items-center justify-content-center">
+    <div class="col-12 col-md-8 col-lg-6">
+      <div class="text-center mb-4">
+        <h1 class="text-uppercase">Subscribe Form</h1>
+      </div>
+      <form [formGroup]="subscribeForm" (ngSubmit)="onSubmit()" class="row g-3">
+        <div class="col-md-6">
+          <label for="firstName" class="form-label">First name</label>
+          <input type="text" class="form-control" id="firstName" formControlName="firstName" [ngClass]="{'is-invalid': f['firstName'].touched && f['firstName'].invalid}">
+          <div *ngIf="f['firstName'].touched && f['firstName'].invalid" class="invalid-feedback">
+            First name is required.
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="lastName" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="lastName" formControlName="lastName" [ngClass]="{'is-invalid': f['lastName'].touched && f['lastName'].invalid}">
+          <div *ngIf="f['lastName'].touched && f['lastName'].invalid" class="invalid-feedback">
+            Last name is required.
+          </div>
+        </div>
+        <div class="col-md-12">
+          <label for="email" class="form-label">Email</label>
+          <div class="input-group">
+            <span class="input-group-text" id="inputGroupPrepend">&#64;</span>
+            <input type="text" class="form-control" id="email" formControlName="email" [ngClass]="{'is-invalid': f['email'].touched && f['email'].invalid}">
+            <div *ngIf="f['email'].touched && f['email'].invalid" class="invalid-feedback">
+              Please enter a valid email.
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="city" class="form-label">City</label>
+          <input type="text" class="form-control" id="city" formControlName="city" [ngClass]="{'is-invalid': f['city'].touched && f['city'].invalid}">
+          <div *ngIf="f['city'].touched && f['city'].invalid" class="invalid-feedback">
+            Please provide a valid city.
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="state" class="form-label">State</label>
+          <select class="form-select" id="state" formControlName="state" [ngClass]="{'is-invalid': f['state'].touched && f['state'].invalid}">
+            <option value="" disabled>Choose...</option>
+            <option>...</option>
+          </select>
+          <div *ngIf="f['state'].touched && f['state'].invalid" class="invalid-feedback">
+            Please select a valid state.
+          </div>
+        </div>
+        <div class="col-md-6">
+          <label for="zip" class="form-label">Zip</label>
+          <input type="text" class="form-control" id="zip" formControlName="zip" [ngClass]="{'is-invalid': f['zip'].touched && f['zip'].invalid}">
+          <div *ngIf="f['zip'].touched && f['zip'].invalid" class="invalid-feedback">
+            Please provide a valid 5-digit zip code.
+          </div>
+        </div>
+        <div class="col-12 mb-3">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="agreeTerms" formControlName="agreeTerms" [ngClass]="{'is-invalid': f['agreeTerms'].touched && f['agreeTerms'].invalid}">
+            <label class="form-check-label" for="agreeTerms">
+              Agree to terms and conditions
+            </label>
+            <div *ngIf="f['agreeTerms'].touched && f['agreeTerms'].invalid" class="invalid-feedback">
+              You must agree before submitting.
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-6 d-flex justify-content-center">
+            <button class="btn btn-outline-primary w-100" type="button" (click)="navigateToFirstComponent()">Cancel</button>
+          </div>
+          <div class="col-6 d-flex justify-content-center">
+            <button class="btn btn-primary w-100" type="submit" [disabled]="subscribeForm.invalid">Submit Form</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
